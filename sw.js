@@ -6,7 +6,7 @@
  *
  * VERSION は build.js が中身のハッシュに差し替える。内容が変われば
  * 別のキャッシュになり、古い殻は activate で捨てられる。 */
-const VERSION = 'drill-8dc021aa65';
+const VERSION = 'drill-8e65f37775';
 
 /* 自分の配下。相対で書いてあるので、どこに置かれても動く。 */
 const SHELL = [

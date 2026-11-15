@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>仮説ドリル</title>
-<meta name="description" content="事業責任者の視座で、仮説生成・因果分解・検証設計を90秒×3種目で鍛えるトレーニング">
+<meta name="description" content="事業責任者の視座で、仮説生成・因果分解・検証設計・結論づけを90秒×4種目で鍛えるトレーニング">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F1F3EE" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121511" media="(prefers-color-scheme: dark)">
@@ -47,6 +47,7 @@
     --s1: #2A78D6;
     --s2: #EB6834;
     --s3: #1BAF7A;
+    --s4: #6250D6;
     --grid: #E3E6DD;
   }
   @media (prefers-color-scheme: dark) {
@@ -69,6 +70,7 @@
       --s1: #3987E5;
       --s2: #D95926;
       --s3: #199E70;
+      --s4: #9085E9;
       --grid: #272D27;
     }
   }
@@ -91,6 +93,7 @@
     --s1: #3987E5;
     --s2: #D95926;
     --s3: #199E70;
+    --s4: #9085E9;
     --grid: #272D27;
   }
 
@@ -151,7 +154,7 @@
 </style>
 
 <style>
-*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Zen Kaku Gothic New,system-ui,-apple-system,Hiragino Kaku Gothic ProN,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:IBM Plex Mono,ui-monospace,SFMono-Regular,Menlo,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.visible{visibility:visible}.fixed{position:fixed}.mx-auto{margin-left:auto;margin-right:auto}.-mt-3{margin-top:-.75rem}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.ml-1{margin-left:.25rem}.ml-auto{margin-left:auto}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-2{margin-top:.5rem}.mt-2\.5{margin-top:.625rem}.mt-auto{margin-top:auto}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-1\.5{height:.375rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-36{height:9rem}.h-7{height:1.75rem}.h-full{height:100%}.min-h-0{min-height:0}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-24{width:6rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.resize-none{resize:none}.resize{resize:both}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-x-1\.5{-moz-column-gap:.375rem;column-gap:.375rem}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.break-words{overflow-wrap:break-word}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-accent{border-color:var(--accent)}.border-alert{border-color:var(--alert)}.border-line{border-color:var(--line)}.border-line2{border-color:var(--line2)}.bg-accent{background-color:var(--accent)}.bg-accentsoft{background-color:var(--accentsoft)}.bg-alertsoft{background-color:var(--alertsoft)}.bg-ground{background-color:var(--ground)}.bg-line2{background-color:var(--line2)}.bg-raised{background-color:var(--raised)}.bg-surface{background-color:var(--surface)}.bg-transparent{background-color:transparent}.p-1\.5{padding:.375rem}.p-3{padding:.75rem}.p-4{padding:1rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-1{padding-bottom:.25rem}.pb-1\.5{padding-bottom:.375rem}.pb-2{padding-bottom:.5rem}.pb-3{padding-bottom:.75rem}.pl-2\.5{padding-left:.625rem}.pl-3{padding-left:.75rem}.pr-3{padding-right:.75rem}.pt-0\.5{padding-top:.125rem}.pt-1{padding-top:.25rem}.pt-2\.5{padding-top:.625rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-sans{font-family:Zen Kaku Gothic New,system-ui,-apple-system,Hiragino Kaku Gothic ProN,sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-tight{letter-spacing:-.025em}.text-accent{color:var(--accent)}.text-alert{color:var(--alert)}.text-ink{color:var(--ink)}.text-ink2{color:var(--ink2)}.text-ink3{color:var(--ink3)}.text-onaccent{color:var(--onaccent)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.focus\:border-accent:focus{border-color:var(--accent)}@media (min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:p-4{padding:1rem}}
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Zen Kaku Gothic New,system-ui,-apple-system,Hiragino Kaku Gothic ProN,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:IBM Plex Mono,ui-monospace,SFMono-Regular,Menlo,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.visible{visibility:visible}.fixed{position:fixed}.mx-auto{margin-left:auto;margin-right:auto}.-mt-3{margin-top:-.75rem}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.ml-1{margin-left:.25rem}.ml-1\.5{margin-left:.375rem}.ml-auto{margin-left:auto}.mr-1{margin-right:.25rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-2{margin-top:.5rem}.mt-2\.5{margin-top:.625rem}.mt-auto{margin-top:auto}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-1\.5{height:.375rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-36{height:9rem}.h-5{height:1.25rem}.h-7{height:1.75rem}.h-full{height:100%}.min-h-0{min-height:0}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-24{width:6rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.resize-none{resize:none}.resize{resize:both}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-x-1\.5{-moz-column-gap:.375rem;column-gap:.375rem}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.break-words{overflow-wrap:break-word}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-accent{border-color:var(--accent)}.border-alert{border-color:var(--alert)}.border-line{border-color:var(--line)}.border-line2{border-color:var(--line2)}.bg-accent{background-color:var(--accent)}.bg-accentsoft{background-color:var(--accentsoft)}.bg-alert{background-color:var(--alert)}.bg-alertsoft{background-color:var(--alertsoft)}.bg-ground{background-color:var(--ground)}.bg-line2{background-color:var(--line2)}.bg-raised{background-color:var(--raised)}.bg-surface{background-color:var(--surface)}.bg-transparent{background-color:transparent}.p-1{padding:.25rem}.p-1\.5{padding:.375rem}.p-3{padding:.75rem}.p-4{padding:1rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-1{padding-bottom:.25rem}.pb-1\.5{padding-bottom:.375rem}.pb-2{padding-bottom:.5rem}.pb-3{padding-bottom:.75rem}.pl-2\.5{padding-left:.625rem}.pl-3{padding-left:.75rem}.pr-3{padding-right:.75rem}.pt-0\.5{padding-top:.125rem}.pt-1{padding-top:.25rem}.pt-2\.5{padding-top:.625rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-baseline{vertical-align:baseline}.font-sans{font-family:Zen Kaku Gothic New,system-ui,-apple-system,Hiragino Kaku Gothic ProN,sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-tight{letter-spacing:-.025em}.text-accent{color:var(--accent)}.text-alert{color:var(--alert)}.text-ink{color:var(--ink)}.text-ink2{color:var(--ink2)}.text-ink3{color:var(--ink3)}.text-onaccent{color:var(--onaccent)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.focus\:border-accent:focus{border-color:var(--accent)}@media (min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:p-4{padding:1rem}}
 </style>
 <div id="root"></div>
 <script>
@@ -709,10 +712,148 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       criteria: '検証手段の具体性（情報源・データ・聞く相手が特定されているか）／反証可能性／経営会議でそのまま使える検証設計になっているか',
       genAsk: '経営が判断を迫られる状況を2〜3文で。相反する事実か制約を必ず含めること。',
     },
+    4: {
+      id: 4, mark: '④', name: '結論ファースト', short: '結論ファースト',
+      task: '「つまり」「だから」「何がわかれば」を1行ずつ。',
+      axes: ['示唆の深さ', '打ち手の経営性', '判断条件の具体性'],
+      criteria: '「つまり」が事実の言い換えでなく一段上の示唆になっているか／「だから」が投資・撤退・組織・価格・提携などの経営判断になっているか／「何がわかれば」が、判断を覆す具体的な事実（何がどうなら）になっているか',
+      genAsk: '一見矛盾する事実を含む経営の状況を2〜3文で。結論を1つに絞れる程度の情報量にすること。',
+    },
+  };
+  var MODE_IDS = [1, 2, 3, 4];
+
+  /* ④は「答えを先に持つ」練習なので、①③の事実をそのまま素材に使う */
+  POOL[4] = POOL[1].concat(POOL[3]).map(function (x) { return { d: x.d, t: x.t }; });
+
+  /* ④の3つの欄 */
+  var FIELDS4 = [
+    { k: 'so', label: 'つまり（示唆）', lead: 'つまり' },
+    { k: 'act', label: 'だから（打ち手）', lead: 'だから' },
+    { k: 'kill', label: '何がわかれば判断が変わるか', lead: '判断が変わる事実' },
+  ];
+
+  /* ①の振り返りで、各行に付ける視点。経営の6方向 */
+  var VIEWS = [
+    { k: 'cust', label: '顧客', s: '顧客' }, { k: 'comp', label: '競合', s: '競合' },
+    { k: 'ops', label: '自社オペ', s: '自社' }, { k: 'fin', label: '財務', s: '財務' },
+    { k: 'org', label: '組織・人', s: '組織' }, { k: 'env', label: '外部環境', s: '外部' },
+  ];
+  function viewLabel(k) { for (var i = 0; i < VIEWS.length; i++) if (VIEWS[i].k === k) return VIEWS[i].label; return ''; }
+
+  /* 終了後の自己チェック。評価観点を、自分で当てはめられる問いに言い換えたもの */
+  var CHECKS = {
+    1: [
+      { k: 'top3', t: '★を付けた3つは「確かめれば打ち手が変わる」ものだ' },
+    ],
+    2: [
+      { k: 'link', t: '各段が、直前の段の「なぜ」にそのまま答えている' },
+      { k: 'norepeat', t: '言い換えただけの段がない' },
+      { k: 'concrete', t: '「意識」「体質」「文化」などの抽象語で止めていない' },
+      { k: 'action', t: '5段目が、経営が動かせる打ち手につながる' },
+    ],
+    3: [
+      { k: 'distinct', t: '3つの仮説は、互いに別の原因を指している' },
+      { k: 'source', t: '各検証に「誰に聞くか／どのデータか」が書いてある' },
+      { k: 'falsify', t: '結果次第で、その仮説を捨てられる形になっている' },
+      { k: 'usable', t: 'そのまま会議や面談で使える問いになっている' },
+    ],
+    4: [
+      { k: 'leap', t: '「つまり」は事実の言い換えではなく、一段上の示唆だ' },
+      { k: 'decision', t: '「だから」は投資・撤退・組織・価格・提携のどれかの判断だ' },
+      { k: 'kill', t: '「何がわかれば」は、何がどうなら判断を変えるかまで書いた' },
+    ],
   };
 
+  /* 自己採点。AI がいなくても、評価観点に沿った点が出るようにする。
+     内訳を返すので、どこで点を落としたかが結果画面で見える。 */
+  function selfScore(mode, inputs, review) {
+    review = review || {};
+    var checks = review.checks || {};
+    var items = CHECKS[mode] || [];
+    var yes = items.filter(function (c) { return checks[c.k]; }).length;
+    var parts;
+    if (mode === 1) {
+      var n = inputs.length;
+      var tags = (review.tags || []).filter(Boolean);
+      var views = {}; tags.forEach(function (t) { views[t] = true; });
+      var nv = Object.keys(views).length;
+      var withNum = inputs.filter(hasNumber).length;
+      var top3 = (review.top3 || []).length;
+      parts = [
+        { name: '本数', got: Math.round(Math.min(n, 10) / 10 * 40), max: 40 },
+        { name: '視点の広さ', got: Math.round(nv / VIEWS.length * 35), max: 35 },
+        { name: '数値で語る', got: withNum >= 2 ? 10 : withNum === 1 ? 5 : 0, max: 10 },
+        { name: '絞り込み', got: Math.min(top3, 3) * 3 + (top3 === 3 && checks.top3 ? 6 : 0), max: 15 },
+      ];
+    } else {
+      var slots = mode === 2 ? 5 : mode === 3 ? 6 : 3;
+      var filled = mode === 3
+        ? inputs.filter(function (l) { return !/（未記入）$/.test(l); }).length
+        : inputs.length;
+      parts = [
+        { name: '書き切り', got: Math.round(Math.min(filled, slots) / slots * 40), max: 40 },
+        { name: '自己チェック', got: items.length ? Math.round(yes / items.length * 60) : 0, max: 60 },
+      ];
+    }
+    var total = parts.reduce(function (a, x) { return a + x.got; }, 0);
+    return { score: Math.max(0, Math.min(100, total)), parts: parts };
+  }
+
+  /* グラフや一覧で使う点数。AI 採点があればそれ、なければ自己採点 */
+  function shownScore(r) {
+    if (typeof r.score === 'number') return r.score;
+    if (typeof r.selfScore === 'number') return r.selfScore;
+    return null;
+  }
+
+  /* 記録を新しい順に並べる */
+  function recentRecords(days) {
+    var all = [];
+    Object.keys(days || {}).forEach(function (ds) {
+      (days[ds].items || []).forEach(function (r) { all.push(r); });
+    });
+    return all.sort(function (a, b) { return (a.createdAt || '') < (b.createdAt || '') ? 1 : -1; });
+  }
+
+  /* ①で付けた視点の割合。直近 n 回ぶん */
+  function viewCoverage(days, n) {
+    var recs = recentRecords(days).filter(function (r) {
+      return r.mode === 1 && Array.isArray(r.tags) && r.tags.some(Boolean);
+    }).slice(0, n);
+    var count = {}, total = 0;
+    recs.forEach(function (r) { r.tags.forEach(function (t) { if (t) { count[t] = (count[t] || 0) + 1; total++; } }); });
+    if (!total) return { total: 0, sessions: 0, rows: [] };
+    var rows = VIEWS.map(function (v) {
+      var c = count[v.k] || 0;
+      return { k: v.k, label: v.label, count: c, pct: Math.round(c / total * 100) };
+    });
+    var counts = rows.map(function (r) { return r.count; });
+    var min = Math.min.apply(null, counts), max = Math.max.apply(null, counts);
+    rows.forEach(function (r) { r.weak = min < max && r.count === min; });
+    return { total: total, sessions: recs.length, rows: rows };
+  }
+
+  /* ホームに出す「今日の意識点」。AI の次の1手を最優先し、
+     なければ自分の振り返りから最も手薄な視点を拾う。お題の中身には触れない。 */
+  function focusFor(days) {
+    var recs = recentRecords(days);
+    for (var i = 0; i < recs.length && i < 8; i++) {
+      var fb = recs[i].feedback;
+      if (fb && typeof fb === 'object' && fb.next) return { label: '前回の次の1手', text: fb.next };
+    }
+    var cov = viewCoverage(days, 10);
+    if (cov.total >= 10) {
+      var weak = cov.rows.filter(function (r) { return r.weak; });
+      if (weak.length) {
+        return { label: '手薄な視点', text: '①では「' + weak.map(function (r) { return r.label; }).join('」「')
+          + '」の方向から最低1本ずつ出す（直近の比率 ' + weak[0].pct + '%）' };
+      }
+    }
+    return null;
+  }
+
   var LIMIT_SEC = 90;
-  var SERIES = ['--s1', '--s2', '--s3'];
+  var SERIES = ['--s1', '--s2', '--s3', '--s4'];
 
   /* ===================================================================
      小物
@@ -822,10 +963,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       return get().then(function (s) {
         if (!s || !s.json) return null;
         var dom = pick(DOMAINS);
-        var ind = pickN(INDUSTRIES, 3);
+        var ind = pickN(INDUSTRIES, 4);
         var di = Math.floor(Math.random() * 3);
         var req = [
-          '事業責任者（本部長・取締役クラス）の仮説思考を鍛えるトレーニングのお題を3本つくる。',
+          '事業責任者（本部長・取締役クラス）の仮説思考を鍛えるトレーニングのお題を4本つくる。',
           '解く人は、現場の一商談ではなく、投資・撤退・組織・価格・提携を動かす立場にいる。',
           '',
           '共通の論点: ' + dom,
@@ -834,6 +975,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           'm1（' + MODES[1].name + '・' + ind[0] + '）: ' + MODES[1].genAsk,
           'm2（' + MODES[2].name + '・' + ind[1] + '）: ' + MODES[2].genAsk,
           'm3（' + MODES[3].name + '・' + ind[2] + '）: ' + MODES[3].genAsk,
+          'm4（' + MODES[4].name + '・' + ind[3] + '）: ' + MODES[4].genAsk,
           '',
           '書き方は次の3例に厳密に合わせる（体裁・情報量・語調とも）:',
           '  例1: 年商300億円の食品メーカーで、売上高は前年比12％増えたが、営業利益は25％減った。'
@@ -845,7 +987,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           '',
           '制約:',
           '- 規模（年商・従業員数・店舗数のいずれか）を冒頭に置き、そこから事象を書く',
-          '- 3本はそれぞれ指定した別の業界の企業にする。同じ会社・同じ場面にしない',
+          '- 4本はそれぞれ指定した別の業界の企業にする。同じ会社・同じ場面にしない',
           '- 各お題に、金額・期間・人数・割合・件数のうち3つ以上の具体的な数値を必ず入れる',
           '- 経営が説明責任を負う水準の事象にする。個別商談の進捗や一顧客の反応だけの話は禁止',
           '- 「売上が落ちた」のような抽象的な書き方は禁止。何がどれだけ、いつからかを書く',
@@ -855,12 +997,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           '- seed ' + uid() + '（毎回違うお題にするための種。本文には書かない）',
           '',
           '出力はJSONのみ。前置き・説明・コードフェンスを一切書かないこと。',
-          '{"m1":"...","m2":"...","m3":"..."}',
+          '{"m1":"...","m2":"...","m3":"...","m4":"..."}',
         ].join('\n');
         return s.json(req, { modelTier: 'default', cache: false }).then(function (j) {
           if (!j) return null;
           var out = {};
-          [1, 2, 3].forEach(function (m) {
+          MODE_IDS.forEach(function (m) {
             var t = j['m' + m];
             if (typeof t === 'string' && t.trim().length > 20 && hasNumber(t)) {
               out[m] = { t: t.trim(), d: di, dom: dom + '／' + ind[m - 1], src: 'ai' };
@@ -878,7 +1020,18 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       var M = MODES[run.mode];
       return get().then(function (s) {
         if (!s || !s.json) return { ok: false, reason: 'unavailable' };
-        var body = run.inputs.map(function (x, i) { return (i + 1) + '. ' + x; }).join('\n');
+        var top = run.top3 || [];
+        var body = run.inputs.map(function (x, i) {
+          var tag = run.mode === 1 && run.tags && run.tags[i] ? '［' + viewLabel(run.tags[i]) + '］' : '';
+          var star = run.mode === 1 && top.indexOf(i) !== -1 ? '★' : '';
+          return (i + 1) + '. ' + star + tag + x;
+        }).join('\n');
+        var extra = [];
+        if (run.mode === 1 && run.tags && run.tags.some(Boolean)) extra.push('', '［］は本人が付けた視点。');
+        if (run.mode === 1 && top.length) {
+          extra.push('★は本人が「最初に検証する」と選んだ上位' + top.length + 'つ。',
+            '★の選び方（確かめれば打ち手が変わるものを選べているか）も評価し、priority に書く。');
+        }
         var req = [
           'あなたは事業責任者（本部長・取締役クラス）の意思決定を鍛える辛口トレーナーである。',
           '以下の' + LIMIT_SEC + '秒トレーニングの結果を採点せよ。',
@@ -892,9 +1045,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           '',
           '回答:',
           body,
+        ].concat(extra).concat([
           '',
           '出力はJSONのみ。前置き・説明・コードフェンスを一切書かないこと。',
-          '{"score":0,"axes":[{"name":"","score":0,"comment":""},{"name":"","score":0,"comment":""},{"name":"","score":0,"comment":""}],"best":{"line":"","reason":""},"worst":{"line":"","rewrite":""},"next":""}',
+          '{"score":0,"axes":[{"name":"","score":0,"comment":""},{"name":"","score":0,"comment":""},{"name":"","score":0,"comment":""}],"best":{"line":"","reason":""},"worst":{"line":"","rewrite":""},"missed":[{"view":"","line":""}],"priority":"","next":""}',
           '',
           '制約:',
           '- axes はちょうど3件。name は順に「' + M.axes.join('」「') + '」を使う',
@@ -904,10 +1058,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           '- 一方で、事実の裏づけがない大きな話も評価しない。検証できる粒度かを見る',
           '- best.line / worst.line は回答からそのまま引用する（改変しない）',
           '- worst.rewrite は助言ではなく、書き直した完成文そのものを1文で書く',
+          '- missed は、回答が見落としている有力な仮説・論点を最大3つ。view はその観点名（顧客・競合・自社オペ・財務・組織・人・外部環境 など）、line はそのまま使える完成文',
+          '- priority は①のときだけ、★の選び方への講評を40字以内で。①以外は空文字',
           '- next は次回1回だけ意識することを1文で。抽象論は書かない',
           '- comment は各30字以内。褒め言葉で埋めない',
           '- すべて日本語',
-        ].join('\n');
+        ]).join('\n');
         return s.json(req, { modelTier: 'default', cache: false }).then(function (j) {
           if (!j || typeof j !== 'object') return { ok: false, reason: 'shape' };
           return { ok: true, fb: normalize(j, M) };
@@ -928,6 +1084,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }),
         best: { line: (j.best && j.best.line) || '', reason: (j.best && j.best.reason) || '' },
         worst: { line: (j.worst && j.worst.line) || '', rewrite: (j.worst && j.worst.rewrite) || '' },
+        missed: (Array.isArray(j.missed) ? j.missed : []).slice(0, 3)
+          .filter(function (m) { return m && m.line; })
+          .map(function (m) { return { view: String(m.view || ''), line: String(m.line) }; }),
+        priority: typeof j.priority === 'string' ? j.priority : '',
         next: j.next || '',
       };
     }
@@ -1083,7 +1243,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     function read() {
       var cs = getComputedStyle(document.documentElement);
       var o = {};
-      ['--ink', '--ink2', '--ink3', '--line', '--grid', '--surface', '--raised', '--accent', '--alert', '--s1', '--s2', '--s3']
+      ['--ink', '--ink2', '--ink3', '--line', '--grid', '--surface', '--raised', '--accent', '--alert', '--s1', '--s2', '--s3', '--s4']
         .forEach(function (k) { o[k] = cs.getPropertyValue(k).trim() || '#888'; });
       return o;
     }
@@ -1121,6 +1281,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     phone: [['rect', { x: 5, y: 2, width: 14, height: 20, rx: 2 }], ['path', { d: 'M12 18h.01' }]],
     share: [['path', { d: 'M12 15V3' }], ['path', { d: 'm8 7 4-4 4 4' }],
             ['path', { d: 'M4 13v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6' }]],
+    star: [['path', { d: 'M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z' }]],
+    retry: [['path', { d: 'M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8' }], ['path', { d: 'M3 3v5h5' }]],
+    target: [['circle', { cx: 12, cy: 12, r: 10 }], ['circle', { cx: 12, cy: 12, r: 6 }], ['circle', { cx: 12, cy: 12, r: 2 }]],
     cloud: [['path', { d: 'M12 13v8' }], ['path', { d: 'm8 17 4 4 4-4' }], ['path', { d: 'M4.4 15a7 7 0 1 1 12.5-6h1.1a4.5 4.5 0 0 1 1.6 8.7' }]],
   };
 
@@ -1128,7 +1291,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     var parts = ICONS[p.name] || [];
     var n = p.size || 16;
     return E('svg', {
-      width: n, height: n, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor',
+      width: n, height: n, viewBox: '0 0 24 24', fill: p.fill ? 'currentColor' : 'none', stroke: 'currentColor',
       strokeWidth: p.weight || 2, strokeLinecap: 'round', strokeLinejoin: 'round',
       'aria-hidden': 'true', className: p.className || 'inline-block shrink-0',
     }, parts.map(function (x, i) { return E(x[0], Object.assign({ key: i }, x[1])); }));
@@ -1223,25 +1386,26 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     var tok = useTokens();
     var R = useRecharts();
     var data = p.data;
-    var cols = [tok['--s1'], tok['--s2'], tok['--s3']];
-    var names = ['① 10本ノック', '② Why×5', '③ 仮説→検証'];
+    var cols = SERIES.map(function (k) { return tok[k]; });
+    var names = ['① 10本ノック', '② Why×5', '③ 仮説→検証', '④ 結論ファースト'];
     if (!data.length) return E('p', 'text-xs text-ink3', 'まだ記録がありません。');
     if (!R) {
       return E(TableFallback, {
         cols: ['日付'].concat(names),
-        rows: data.map(function (d) { return [d.k, d.m1, d.m2, d.m3]; }),
+        rows: data.map(function (d) { return [d.k, d.m1, d.m2, d.m3, d.m4]; }),
       });
     }
     return E('div', { style: { width: '100%' } },
-      E(R.ResponsiveContainer, { width: '100%', height: 190 },
+      E(R.ResponsiveContainer, { width: '100%', height: 210 },
         E(R.LineChart, { data: data, margin: { top: 10, right: 14, bottom: 4, left: -18 } },
           E(R.CartesianGrid, { stroke: tok['--grid'], strokeDasharray: '2 4', vertical: false }),
           E(R.XAxis, { dataKey: 'k', tick: { fill: tok['--ink3'], fontSize: 11 }, tickLine: false, axisLine: { stroke: tok['--line'] } }),
           E(R.YAxis, { domain: [0, 100], ticks: [0, 50, 100], tick: { fill: tok['--ink3'], fontSize: 11 }, tickLine: false, axisLine: false, width: 40 }),
           E(R.Tooltip, { content: E(Tip), cursor: { stroke: tok['--line'] } }),
-          E(R.Legend, { verticalAlign: 'top', height: 26, iconType: 'plainline', iconSize: 14,
-                        wrapperStyle: { fontSize: 11, color: tok['--ink2'] } }),
-          [1, 2, 3].map(function (m, i) {
+          E(R.Legend, { verticalAlign: 'top', height: 46, iconType: 'plainline', iconSize: 14,
+                        wrapperStyle: { fontSize: 11, lineHeight: '18px' },
+                        formatter: function (v) { return E('span', { style: { color: tok['--ink2'] } }, v); } }),
+          MODE_IDS.map(function (m, i) {
             return E(R.Line, {
               key: m, type: 'monotone', dataKey: 'm' + m, name: names[i], stroke: cols[i], strokeWidth: 2,
               connectNulls: true, dot: { r: 3, fill: tok['--surface'], stroke: cols[i], strokeWidth: 2 },
@@ -1270,7 +1434,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           E(R.XAxis, { dataKey: 'k', tick: { fill: tok['--ink3'], fontSize: 11 }, tickLine: false, axisLine: { stroke: tok['--line'] } }),
           E(R.YAxis, { domain: [0, 10], ticks: [0, 5, 10], tick: { fill: tok['--ink3'], fontSize: 11 }, tickLine: false, axisLine: false, width: 40 }),
           E(R.Tooltip, { content: E(Tip), cursor: { fill: tok['--grid'], fillOpacity: 0.5 } }),
-          E(R.Bar, { dataKey: 'v', name: '平均本数', fill: tok['--accent'], radius: [4, 4, 0, 0], isAnimationActive: false },
+          E(R.Bar, { dataKey: 'v', name: '平均本数', fill: tok['--accent'], radius: [4, 4, 0, 0], maxBarSize: 44, isAnimationActive: false },
             E(R.LabelList, { dataKey: 'v', position: 'top', fill: tok['--ink2'], fontSize: 11 })))));
   }
 
@@ -1318,13 +1482,16 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       for (var i = 6; i >= 0; i--) {
         var ds = shiftDay(today, -i);
         var day = p.days[ds];
-        var ss = day ? day.items.map(function (r) { return r.score; }).filter(function (x) { return typeof x === 'number'; }) : [];
+        var ss = day ? day.items.map(shownScore).filter(function (x) { return typeof x === 'number'; }) : [];
         out.push({ k: mdLabel(ds), v: ss.length ? Math.round(ss.reduce(function (a, b) { return a + b; }, 0) / ss.length) : null });
       }
       return out;
     }, [p.days, today]);
 
-    var nextMode = doneMap[1] ? (doneMap[2] ? (doneMap[3] ? 1 : 3) : 2) : 1;
+    var nextMode = 1;
+    for (var mi = 0; mi < MODE_IDS.length; mi++) { if (!doneMap[MODE_IDS[mi]]) { nextMode = MODE_IDS[mi]; break; } }
+    var allDone = doneCount >= MODE_IDS.length;
+    var focus = useMemo(function () { return focusFor(p.days); }, [p.days]);
 
     return E('div', 'safe-page safe-t flex flex-col gap-5 px-4 pt-5',
       E('header', 'flex items-start justify-between gap-3',
@@ -1345,13 +1512,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             E('div', 'mt-1 text-xs text-ink3', '連続日数'))),
         E('div', 'flex flex-1 flex-col justify-center rounded-lg border border-line bg-surface px-4 py-3',
           E('div', 'flex items-center gap-1.5',
-            [1, 2, 3].map(function (m) {
+            MODE_IDS.map(function (m) {
               return E('span', {
                 key: m,
                 className: 'h-2.5 w-2.5 rounded-full ' + (doneMap[m] ? 'bg-accent' : 'border border-line bg-ground'),
               });
             }),
-            E('span', 'num ml-1 text-sm font-medium text-ink', doneCount + '/3')),
+            E('span', 'num ml-1 text-sm font-medium text-ink', Math.min(doneCount, MODE_IDS.length) + '/' + MODE_IDS.length)),
           E('div', 'mt-1.5 text-xs text-ink3', '今日の実施'))),
 
       /* 開始（ここが1タップ目。押した瞬間にタイマーが走る） */
@@ -1362,12 +1529,21 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       },
         E(Icon, { name: 'play', size: 16, weight: 2.4 }),
         doneCount === 0 ? '今日のセットを始める'
-          : doneCount < 3 ? MODES[nextMode].mark + ' から続ける' : 'もう1セット回す'),
-      E('p', 'num -mt-3 text-center text-xs text-ink3', LIMIT_SEC + '秒 × 3本 ・ 押すと即スタート'),
+          : !allDone ? MODES[nextMode].mark + ' から続ける' : 'もう1セット回す'),
+      E('p', 'num -mt-3 text-center text-xs text-ink3', LIMIT_SEC + '秒 × ' + MODE_IDS.length + '本 ・ 押すと即スタート'),
 
-      /* 3種目 */
+      /* 今日の意識点（前回の次の1手、なければ手薄な視点） */
+      focus
+        ? E('section', 'flex items-start gap-3 rounded-lg border border-line bg-surface px-4 py-3',
+          E(Icon, { name: 'target', size: 17, className: 'mt-0.5 shrink-0 text-accent' }),
+          E('div', 'min-w-0',
+            E('p', 'text-xs font-bold text-accent', focus.label),
+            E('p', 'mt-0.5 text-sm leading-snug text-ink', focus.text)))
+        : null,
+
+      /* 4種目 */
       E('section', 'flex flex-col gap-2',
-        [1, 2, 3].map(function (m) {
+        MODE_IDS.map(function (m) {
           var M = MODES[m], rec = doneMap[m];
           return E('button', {
             key: m, type: 'button', onClick: function () { p.startSet(m); },
@@ -1380,8 +1556,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             E('span', 'min-w-0 flex-1',
               E('span', 'block text-sm font-bold text-ink', M.name),
               E('span', 'block truncate text-xs text-ink3', M.task)),
-            rec && typeof rec.score === 'number'
-              ? E('span', 'num text-sm font-semibold text-ink2', rec.score)
+            rec && shownScore(rec) !== null
+              ? E('span', 'num text-sm font-semibold text-ink2', shownScore(rec))
               : E(Icon, { name: 'right', size: 16, className: 'text-ink3' }));
         })),
 
@@ -1411,11 +1587,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     var st4 = useState(0), stage = st4[0], setStage = st4[1];
     var st5 = useState([['', ''], ['', ''], ['', '']]), pairs = st5[0], setPairs = st5[1]; /* ③ */
     var st6 = useState(false), locked = st6[0], setLocked = st6[1];
+    var st7 = useState(['', '', '']), concl = st7[0], setConcl = st7[1];   /* ④ */
 
     var inputRef = useRef(null);
     var tailRef = useRef(null);
     var stateRef = useRef({});
-    stateRef.current = { lines: lines, draft: draft, whys: whys, stage: stage, pairs: pairs };
+    stateRef.current = { lines: lines, draft: draft, whys: whys, stage: stage, pairs: pairs, concl: concl };
 
     useVisualViewport(true);
     useWakeLock(true);
@@ -1431,6 +1608,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         inputs = s.whys.map(function (w, i) { return w.trim(); });
         if (s.draft.trim() && !inputs[s.stage]) inputs[s.stage] = s.draft.trim();
         inputs = inputs.filter(function (x) { return x; });
+      } else if (p.run.mode === 4) {
+        inputs = [];
+        s.concl.forEach(function (v, i) {
+          if (v.trim()) inputs.push(FIELDS4[i].lead + ': ' + v.trim());
+        });
       } else {
         inputs = [];
         s.pairs.forEach(function (pr, i) {
@@ -1460,7 +1642,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }, [p.run.id]);
 
     useEffect(function () {
-      if (p.run.mode === 3) return;
+      if (p.run.mode >= 3) return;
       if (tailRef.current) tailRef.current.scrollTop = tailRef.current.scrollHeight;
     }, [p.run.mode, lines.length, stage]);
 
@@ -1501,6 +1683,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           className: 'num text-xs ' + (low ? 'text-alert' : 'text-ink3'),
         }, p.run.mode === 1 ? (lines.length + ' / 10 本')
           : p.run.mode === 2 ? ('第 ' + (stage + 1) + ' 段 / 5')
+          : p.run.mode === 4 ? (concl.filter(function (v) { return v.trim(); }).length + ' / 3 項目')
           : (pairs.filter(function (r) { return r[0].trim() && r[1].trim(); }).length + ' / 3 組'))),
       E('div', { className: 'rail mt-2 rounded-full' + (low ? ' low' : '') },
         E('i', { style: { width: pct + '%' } })));
@@ -1555,6 +1738,34 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               onKeyDown: function (e) { if (e.key === 'Enter') { e.preventDefault(); commitWhy(); } },
               className: 'w-full border-0 border-b border-line bg-transparent pb-1.5 text-ink outline-none focus:border-accent',
             }))));
+    } else if (p.run.mode === 4) {
+      body = E('div', { className: 'lines safe-b min-h-0 flex-1 overflow-y-auto px-4 pt-3', ref: tailRef },
+        E('div', 'flex flex-col gap-3',
+          FIELDS4.map(function (f, i) {
+            return E('label', { key: f.k, className: 'block rounded-lg border border-line bg-surface p-3' },
+              E('span', 'mb-1.5 block text-xs font-medium text-accent', f.label),
+              E('textarea', {
+                ref: i === 0 ? inputRef : null,
+                id: 'drill4-' + i, rows: 2, value: concl[i], disabled: locked,
+                autoComplete: 'off', autoCorrect: 'off', autoCapitalize: 'off', spellCheck: false,
+                onChange: function (e) {
+                  var nc = concl.slice(); nc[i] = e.target.value; setConcl(nc);
+                },
+                onFocus: function (e) {
+                  try { e.target.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch (err) {}
+                },
+                onKeyDown: function (e) {
+                  if (e.key === 'Enter') {
+                    e.preventDefault();
+                    buzz(8);
+                    if (i === FIELDS4.length - 1) { finish('early'); return; }
+                    var el = document.getElementById('drill4-' + (i + 1));
+                    if (el) el.focus();
+                  }
+                },
+                className: 'w-full resize-none rounded-md border border-line bg-ground px-2.5 py-2 leading-snug text-ink outline-none focus:border-accent',
+              }));
+          })));
     } else {
       body = E('div', { className: 'lines safe-b min-h-0 flex-1 overflow-y-auto px-4 pt-3', ref: tailRef },
         E('div', 'flex flex-col gap-3',
@@ -1594,6 +1805,102 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 
   /* ===================================================================
+     振り返り — 時間切れの後にだけ出す。書いたものを自分で分類し、
+     評価観点を自分に当てはめる。採点を AI に預けきらないための段。
+     =================================================================== */
+  function Review(p) {
+    var rec = p.rec, M = MODES[rec.mode];
+    var n = rec.inputs.length;
+    var s1 = useState(function () { return (rec.tags || []).slice(0, n).concat(new Array(Math.max(0, n - (rec.tags || []).length)).fill(null)); }),
+      tags = s1[0], setTags = s1[1];
+    var s2 = useState(rec.top3 || []), top3 = s2[0], setTop3 = s2[1];
+    var s3 = useState({}), checks = s3[0], setChecks = s3[1];
+    var items = CHECKS[rec.mode] || [];
+
+    function setTag(i, k) {
+      var nt = tags.slice(); nt[i] = nt[i] === k ? null : k; setTags(nt); buzz(6);
+    }
+    function toggleStar(i) {
+      var at = top3.indexOf(i);
+      if (at !== -1) { setTop3(top3.filter(function (x) { return x !== i; })); return; }
+      if (top3.length >= 3) { buzz([0, 20, 40, 20]); return; }
+      setTop3(top3.concat([i])); buzz(6);
+    }
+    function toggleCheck(k) { var nc = Object.assign({}, checks); nc[k] = !nc[k]; setChecks(nc); buzz(6); }
+
+    var used = {}; tags.forEach(function (t) { if (t) used[t] = true; });
+    var nUsed = Object.keys(used).length;
+
+    return E('div', 'safe-page safe-t flex flex-col gap-4 px-4 pt-5',
+      E('header', null,
+        E('p', 'eyebrow text-xs font-medium uppercase text-ink3', '振り返り ・ ' + M.mark + ' ' + M.name),
+        E('h1', 'mt-1 text-lg font-bold text-ink', rec.mode === 1 ? '分類して、絞り込む' : '自分の答えを点検する'),
+        E('p', 'mt-1 text-xs leading-relaxed text-ink3',
+          rec.mode === 1
+            ? '各行に視点を1つ付け、最初に確かめる3つに★を付けます。自社＝自社オペレーション、組織＝組織・人、外部＝外部環境。'
+            : 'できた項目にだけチェックを付けます。甘く付けると、AI採点とのずれで分かります。')),
+
+      rec.mode === 1
+        ? E('section', 'flex flex-col gap-2',
+          E('div', 'flex items-baseline justify-between text-xs text-ink3',
+            E('span', null, '使った視点 ', E('span', 'num font-medium text-ink', nUsed + '/6')),
+            E('span', null, '★ ', E('span', 'num font-medium text-ink', top3.length + '/3'))),
+          rec.inputs.map(function (l, i) {
+            var starred = top3.indexOf(i) !== -1;
+            return E('div', { key: i, className: 'rounded-lg border bg-surface p-3 ' + (starred ? 'border-accent' : 'border-line') },
+              E('div', 'flex items-start gap-2.5',
+                E('span', 'num w-5 shrink-0 pt-0.5 text-right text-xs text-ink3', i + 1),
+                E('p', 'min-w-0 flex-1 text-sm leading-snug text-ink', l),
+                E('button', {
+                  type: 'button', onClick: function () { toggleStar(i); },
+                  'aria-pressed': starred ? 'true' : 'false', 'aria-label': (i + 1) + '行目を優先にする',
+                  className: 'shrink-0 rounded-md p-1 ' + (starred ? 'text-accent' : 'text-ink3'),
+                }, E(Icon, { name: 'star', size: 18, fill: starred }))),
+              E('div', 'mt-2 grid grid-cols-6 gap-1',
+                VIEWS.map(function (v) {
+                  var on = tags[i] === v.k;
+                  return E('button', {
+                    key: v.k, type: 'button', onClick: function () { setTag(i, v.k); },
+                    'aria-pressed': on ? 'true' : 'false', 'aria-label': v.label, title: v.label,
+                    className: 'rounded-full border py-1 text-center text-xs '
+                      + (on ? 'border-accent bg-accent font-medium text-onaccent' : 'border-line bg-ground text-ink2'),
+                  }, v.s);
+                })));
+          }))
+        : null,
+
+      items.length
+        ? E('section', 'flex flex-col gap-2',
+          rec.mode !== 1 ? E('h2', 'text-xs font-bold text-ink2', '自己チェック') : null,
+          items.map(function (c) {
+            var on = !!checks[c.k];
+            return E('button', {
+              key: c.k, type: 'button', onClick: function () { toggleCheck(c.k); },
+              'aria-pressed': on ? 'true' : 'false',
+              className: 'flex items-start gap-3 rounded-lg border px-3 py-3 text-left '
+                + (on ? 'border-accent bg-accentsoft' : 'border-line bg-surface'),
+            },
+              E('span', {
+                className: 'mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded border '
+                  + (on ? 'border-accent bg-accent text-onaccent' : 'border-line bg-ground'),
+              }, on ? E(Icon, { name: 'check', size: 13, weight: 3 }) : null),
+              E('span', 'text-sm leading-snug text-ink', c.t));
+          }))
+        : null,
+
+      E('div', 'flex flex-col items-stretch gap-2',
+        E('button', {
+          type: 'button',
+          onClick: function () { p.onDone({ tags: rec.mode === 1 ? tags : null, top3: rec.mode === 1 ? top3 : null, checks: checks }); },
+          className: 'flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3.5 text-sm font-bold text-onaccent',
+        }, '採点へ', E(Icon, { name: 'right', size: 15, weight: 2.4 })),
+        E('button', {
+          type: 'button', onClick: function () { p.onDone(null); },
+          className: 'py-2 text-center text-xs text-ink3',
+        }, '振り返らずに結果を見る')));
+  }
+
+  /* ===================================================================
      結果画面 — 改善が先、良かった点は後
      =================================================================== */
   function Meter(p) {
@@ -1605,37 +1912,70 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       E('span', 'num w-8 shrink-0 text-right text-xs font-medium text-ink', v === null ? '—' : v));
   }
 
+  /* 自己採点の内訳。got/max をそのまま見せる */
+  function PartMeter(p) {
+    var pct = p.max ? Math.round(p.got / p.max * 100) : 0;
+    return E('div', 'flex items-center gap-3',
+      E('span', 'w-24 shrink-0 text-xs text-ink2', p.name),
+      E('span', 'h-1.5 flex-1 overflow-hidden rounded-full bg-line2',
+        E('span', { className: 'block h-full rounded-full bg-accent', style: { width: pct + '%' } })),
+      E('span', 'num w-12 shrink-0 text-right text-xs text-ink2', p.got + '/' + p.max));
+  }
+
+  /* 小さな見出し付きの枠。改善の段は警告色、そうでない段は控えめに */
+  function Block(p) {
+    return E('section', 'rounded-lg border p-4 ' + (p.strong ? 'border-2 border-accent bg-accentsoft' : 'border-line bg-surface'),
+      E('h3', 'eyebrow mb-2 flex items-center gap-1.5 text-xs font-bold uppercase '
+        + (p.tone === 'alert' ? 'text-alert' : p.strong ? 'text-accent' : 'text-ink3'),
+        p.icon ? E(Icon, { name: p.icon, size: 13 }) : null, p.title),
+      p.children);
+  }
+
   function Result(p) {
     var rec = p.rec, M = MODES[rec.mode];
     var fb = rec.feedback;
     var isObj = fb && typeof fb === 'object';
+    var hasAI = typeof rec.score === 'number';
+    var hasSelf = typeof rec.selfScore === 'number';
+    var big = hasAI ? rec.score : hasSelf ? rec.selfScore : null;
+    var gap = hasAI && hasSelf ? rec.selfScore - rec.score : null;
+
+    var items = CHECKS[rec.mode] || [];
+    var unchecked = rec.self && rec.self.checks
+      ? items.filter(function (c) { return !rec.self.checks[c.k]; }) : [];
+    var used = {}; (rec.tags || []).forEach(function (t) { if (t) used[t] = true; });
+    var tagged = Array.isArray(rec.tags) && rec.tags.some(Boolean);
+    var missingViews = tagged ? VIEWS.filter(function (v) { return !used[v.k]; }) : [];
 
     return E('div', 'safe-page safe-t flex flex-col gap-4 px-4 pt-5',
       E('header', null,
         E('p', 'eyebrow text-xs font-medium uppercase text-ink3', M.mark + ' ' + M.name),
         E('div', 'mt-2 flex items-end gap-3',
-          typeof rec.score === 'number'
-            ? E('span', 'num text-5xl font-semibold leading-none text-ink', rec.score)
+          big !== null
+            ? E('span', 'num text-5xl font-semibold leading-none text-ink', big)
             : E('span', 'text-xl font-bold leading-none text-ink3', p.scoring ? '採点中' : '採点なし'),
           E('span', 'num pb-1 text-xs text-ink3',
-            (typeof rec.score === 'number' ? '/ 100 ・ ' : '') + rec.durationSec + '秒 ・ ' + rec.count + (rec.mode === 1 ? '本' : '項目')))),
+            (big !== null ? '/ 100' + (hasAI ? '' : '（自己採点）') + ' ・ ' : '')
+              + rec.durationSec + '秒 ・ ' + rec.count + (rec.mode === 1 ? '本' : '項目'))),
+        gap !== null
+          ? E('p', 'mt-2 text-xs text-ink2',
+            '自己採点 ', E('span', 'num font-medium text-ink', rec.selfScore), ' → ',
+            Math.abs(gap) <= 5 ? 'AI採点とほぼ一致。自己評価は正確です'
+              : gap > 0 ? E('span', 'font-medium text-alert', 'AI採点より' + gap + '点甘い')
+              : 'AI採点より' + (-gap) + '点辛い')
+          : null,
+        rec.mode === 1 && rec.count >= 10
+          ? E('p', 'num mt-1 text-xs text-ink3',
+            '10本到達 ' + rec.durationSec + '秒' + (p.best10 ? ' ・ 自己ベスト ' + p.best10 + '秒' : ''))
+          : null),
 
       p.scoring
-        ? E('div', 'rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink2', '採点中…（記録はすでに保存済みです）')
+        ? E('div', 'rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink2', 'AI採点中…（記録はすでに保存済みです）')
         : null,
 
-      isObj && fb.axes ? E('section', 'flex flex-col gap-2.5 rounded-lg border border-line bg-surface p-4',
-        fb.axes.map(function (a, i) {
-          return E('div', { key: i },
-            E(Meter, { name: a.name, value: a.score }),
-            a.comment ? E('p', 'mt-1 text-xs leading-snug text-ink3', a.comment) : null);
-        })) : null,
-
-      /* 改善が先 */
+      /* ---- 改善が先 ---- */
       isObj && (fb.worst.line || fb.worst.rewrite)
-        ? E('section', 'rounded-lg border border-line bg-surface p-4',
-          E('h3', 'eyebrow mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-alert',
-            E(Icon, { name: 'alert', size: 13 }), '最も弱い1行'),
+        ? E(Block, { title: '最も弱い1行', tone: 'alert', icon: 'alert' },
           fb.worst.line ? E('p', 'mb-3 border-l-2 border-alert pl-3 text-sm leading-snug text-ink2', fb.worst.line) : null,
           fb.worst.rewrite
             ? E('div', null,
@@ -1644,38 +1984,94 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             : null)
         : null,
 
+      isObj && fb.missed && fb.missed.length
+        ? E(Block, { title: '見落とし', tone: 'alert', icon: 'target' },
+          E('ul', 'flex flex-col gap-2',
+            fb.missed.map(function (m, i) {
+              return E('li', { key: i, className: 'flex gap-2 text-sm leading-snug' },
+                m.view ? E('span', 'mt-0.5 shrink-0 rounded-full border border-line px-2 py-0.5 text-xs text-ink2', m.view) : null,
+                E('span', 'text-ink', m.line));
+            })))
+        : null,
+
+      missingViews.length
+        ? E(Block, { title: '使わなかった視点', tone: 'alert' },
+          E('div', 'flex flex-wrap gap-1.5',
+            VIEWS.map(function (v) {
+              var on = !!used[v.k];
+              return E('span', {
+                key: v.k,
+                className: 'rounded-full border px-2.5 py-1 text-xs '
+                  + (on ? 'border-line bg-ground text-ink3' : 'border-alert font-medium text-alert'),
+              }, (on ? '' : '抜け ') + v.label);
+            })),
+          E('p', 'mt-2 text-xs text-ink3', '6方向のうち ' + (VIEWS.length - missingViews.length) + ' 方向を使いました。'))
+        : null,
+
+      unchecked.length
+        ? E(Block, { title: '自分で×を付けた点', tone: 'alert' },
+          E('ul', 'flex flex-col gap-1.5',
+            unchecked.map(function (c) {
+              return E('li', { key: c.k, className: 'text-sm leading-snug text-ink2' }, '・' + c.t);
+            })))
+        : null,
+
+      isObj && fb.priority
+        ? E(Block, { title: '★の選び方' }, E('p', 'text-sm leading-snug text-ink2', fb.priority))
+        : null,
+
       isObj && fb.next
-        ? E('section', 'rounded-lg border-2 border-accent bg-accentsoft p-4',
-          E('h3', 'eyebrow mb-1.5 text-xs font-bold uppercase text-accent', '次の1手'),
+        ? E(Block, { title: '次の1手', strong: true },
           E('p', 'text-base font-medium leading-snug text-ink', fb.next))
         : null,
 
+      /* ---- 点の内訳 ---- */
+      isObj && fb.axes
+        ? E(Block, { title: 'AI採点の内訳' },
+          E('div', 'flex flex-col gap-2.5',
+            fb.axes.map(function (a, i) {
+              return E('div', { key: i },
+                E(Meter, { name: a.name, value: a.score }),
+                a.comment ? E('p', 'mt-1 text-xs leading-snug text-ink3', a.comment) : null);
+            })))
+        : null,
+
+      rec.self && rec.self.parts
+        ? E(Block, { title: '自己採点の内訳' },
+          E('div', 'flex flex-col gap-2.5',
+            rec.self.parts.map(function (x, i) { return E(PartMeter, { key: i, name: x.name, got: x.got, max: x.max }); })))
+        : null,
+
+      /* ---- 良かった点は後 ---- */
       isObj && fb.best.line
-        ? E('section', 'rounded-lg border border-line bg-surface p-4',
-          E('h3', 'eyebrow mb-2 text-xs font-bold uppercase text-ink3', '最も良かった1行'),
+        ? E(Block, { title: '最も良かった1行' },
           E('p', 'mb-2 border-l-2 border-line pl-3 text-sm leading-snug text-ink2', fb.best.line),
           fb.best.reason ? E('p', 'text-xs text-ink3', fb.best.reason) : null)
         : null,
 
       (!isObj && fb)
-        ? E('section', 'rounded-lg border border-line bg-surface p-4',
-          E('h3', 'eyebrow mb-2 text-xs font-bold uppercase text-ink3', '講評（未整形）'),
+        ? E(Block, { title: '講評（未整形）' },
           E('pre', 'whitespace-pre-wrap break-words font-sans text-sm leading-relaxed text-ink2', String(fb)))
         : null,
 
       (!fb && !p.scoring)
-        ? E('section', 'rounded-lg border border-line bg-surface p-4 text-sm text-ink2',
-          '採点は取得できませんでした。記録は保存されています。')
+        ? E('p', 'px-1 text-xs text-ink3', p.aiLive
+          ? 'AI採点を取得できませんでした。記録と自己採点は保存済みです。'
+          : 'この環境ではAI採点はありません。自己採点で記録しています。')
         : null,
 
-      E('section', 'rounded-lg border border-line bg-surface p-4',
-        E('h3', 'eyebrow mb-2 text-xs font-bold uppercase text-ink3', 'あなたの入力'),
+      E(Block, { title: 'あなたの入力' },
         E('ol', 'flex flex-col gap-1.5',
           rec.inputs.length
             ? rec.inputs.map(function (l, i) {
+              var star = rec.top3 && rec.top3.indexOf(i) !== -1;
+              var tag = rec.tags && rec.tags[i];
               return E('li', { key: i, className: 'flex gap-2.5 text-sm leading-snug' },
                 E('span', 'num w-5 shrink-0 pt-0.5 text-right text-xs text-ink3', i + 1),
-                E('span', 'text-ink2', l));
+                E('span', 'min-w-0 flex-1 text-ink2',
+                  star ? E(Icon, { name: 'star', size: 12, fill: true, className: 'mr-1 inline-block align-baseline text-accent' }) : null,
+                  l,
+                  tag ? E('span', 'ml-1.5 whitespace-nowrap rounded-full border border-line px-1.5 text-xs text-ink3', viewLabel(tag)) : null));
             })
             : E('li', 'text-sm text-ink3', '（入力なし）'))),
 
@@ -1687,7 +2083,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           }, MODES[p.nextMode].mark + ' 次の種目へ', E(Icon, { name: 'right', size: 15, weight: 2.4 }))
           : null,
         E('button', {
-          type: 'button', onClick: function () { p.go('home'); },
+          type: 'button', onClick: function () { p.go('home'); }, 'aria-label': 'ホームへ',
           className: (p.nextMode ? 'shrink-0 ' : 'flex-1 ')
             + 'flex items-center justify-center gap-2 rounded-lg border border-line bg-surface px-4 py-3.5 text-sm font-medium text-ink2',
         }, E(Icon, { name: 'home', size: 15 }), p.nextMode ? '' : 'ホームへ')));
@@ -1702,9 +2098,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
     var series = useMemo(function () {
       return dates.slice(0, 14).reverse().map(function (ds) {
-        var row = { k: mdLabel(ds), m1: null, m2: null, m3: null };
+        var row = { k: mdLabel(ds), m1: null, m2: null, m3: null, m4: null };
         p.days[ds].items.forEach(function (r) {
-          if (typeof r.score === 'number') row['m' + r.mode] = r.score;
+          var v = shownScore(r);
+          if (typeof v === 'number') row['m' + r.mode] = v;
         });
         return row;
       });
@@ -1718,6 +2115,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       }).filter(function (r) { return r.v !== null; });
     }, [p.days]);
 
+    var coverage = useMemo(function () { return viewCoverage(p.days, 10); }, [p.days]);
+
     return E('div', 'safe-page safe-t flex flex-col gap-4 px-4 pt-5',
       E('header', 'flex items-center gap-2',
         E('button', {
@@ -1727,7 +2126,20 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         E('h1', 'text-lg font-bold text-ink', '履歴'),
         E('span', 'num ml-auto text-xs text-ink3', dates.length + '日分')),
 
-      E(ChartFrame, { title: '種目別スコア', note: '直近14日' }, E(ModeTrend, { data: series })),
+      E(ChartFrame, { title: '種目別スコア', note: '直近14日・AI採点がない回は自己採点' }, E(ModeTrend, { data: series })),
+      coverage.total
+        ? E(ChartFrame, { title: '① 視点の偏り', note: '直近' + coverage.sessions + '回・' + coverage.total + '行' },
+          E('div', 'flex flex-col gap-2.5',
+            coverage.rows.map(function (r) {
+              return E('div', { key: r.k, className: 'flex items-center gap-3' },
+                E('span', 'w-16 shrink-0 text-xs text-ink2', r.label),
+                E('span', 'h-1.5 flex-1 overflow-hidden rounded-full bg-line2',
+                  E('span', { className: 'block h-full rounded-full ' + (r.weak ? 'bg-alert' : 'bg-accent'), style: { width: r.pct + '%' } })),
+                E('span', 'num w-10 shrink-0 text-right text-xs text-ink2', r.pct + '%'),
+                E('span', { className: 'w-8 shrink-0 text-right text-xs ' + (r.weak ? 'font-medium text-alert' : 'text-ink3') }, r.weak ? '手薄' : ''));
+            })),
+          E('p', 'mt-2 text-xs text-ink3', '振り返りで付けた視点の割合です。赤が最も手薄な方向。'))
+        : null,
       E(ChartFrame, { title: '① の平均本数', note: '10本満点' }, E(CountTrend, { data: counts })),
 
       dates.length === 0
@@ -1738,7 +2150,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             var day = p.days[ds];
             var isOpen = open === ds;
             var avg = (function () {
-              var ss = day.items.map(function (r) { return r.score; }).filter(function (x) { return typeof x === 'number'; });
+              var ss = day.items.map(shownScore).filter(function (x) { return typeof x === 'number'; });
               return ss.length ? Math.round(ss.reduce(function (a, b) { return a + b; }, 0) / ss.length) : null;
             })();
             return E('div', { key: ds, className: 'overflow-hidden rounded-lg border border-line bg-surface' },
@@ -1749,7 +2161,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               },
                 E('span', 'num text-sm font-medium text-ink', ds),
                 E('span', 'flex gap-1',
-                  [1, 2, 3].map(function (m) {
+                  MODE_IDS.map(function (m) {
                     var has = day.items.some(function (r) { return r.mode === m; });
                     return E('span', {
                       key: m, className: 'h-2 w-2 rounded-full ' + (has ? 'bg-accent' : 'border border-line'),
@@ -1766,18 +2178,28 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         E('span', 'text-xs font-bold text-ink', M.mark + ' ' + M.short),
                         E('span', 'num text-xs text-ink3',
                           DIFF[r.difficulty || 0] + ' ・ ' + r.durationSec + '秒 ・ ' + r.count + (r.mode === 1 ? '本' : '項目')),
-                        E('span', 'num ml-auto text-sm font-semibold text-ink', typeof r.score === 'number' ? r.score : '—')),
+                        E('span', 'num ml-auto text-sm font-semibold text-ink',
+                          shownScore(r) === null ? '—' : shownScore(r) + (typeof r.score === 'number' ? '' : '（自己）'))),
                       E('p', 'case mb-2 rounded-md bg-ground px-3 py-2 text-xs leading-relaxed text-ink2', r.prompt),
                       E('ol', 'flex flex-col gap-1',
                         r.inputs.map(function (l, i) {
+                          var star = r.top3 && r.top3.indexOf(i) !== -1;
+                          var tag = r.tags && r.tags[i];
                           return E('li', { key: i, className: 'flex gap-2 text-xs leading-snug' },
                             E('span', 'num w-4 shrink-0 text-right text-ink3', i + 1),
-                            E('span', 'text-ink2', l));
+                            E('span', 'text-ink2',
+                              star ? E(Icon, { name: 'star', size: 11, fill: true, className: 'mr-1 inline-block align-baseline text-accent' }) : null,
+                              l,
+                              tag ? E('span', 'ml-1 text-ink3', '［' + viewLabel(tag) + '］') : null));
                         })),
                       r.feedback && typeof r.feedback === 'object' && r.feedback.next
                         ? E('p', 'mt-2 border-l-2 border-accent pl-2.5 text-xs leading-snug text-ink2',
                           '次の1手: ' + r.feedback.next)
-                        : null);
+                        : null,
+                      E('button', {
+                        type: 'button', onClick: function () { p.retry(r); },
+                        className: 'mt-2 flex items-center gap-1.5 text-xs font-medium text-accent',
+                      }, E(Icon, { name: 'retry', size: 13 }), 'この問題でもう一度'));
                   }))
                 : null);
           })));
@@ -1799,11 +2221,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, E(Icon, { name: 'back', size: 16 })),
         E('h1', 'text-lg font-bold text-ink', 'お題を自分で入力')),
 
-      E('div', 'flex gap-2',
-        [1, 2, 3].map(function (m) {
+      E('div', 'grid grid-cols-2 gap-2',
+        MODE_IDS.map(function (m) {
           return E('button', {
             key: m, type: 'button', onClick: function () { setMode(m); },
-            className: 'flex-1 rounded-lg border px-2 py-2.5 text-xs font-medium '
+            className: 'rounded-lg border px-2 py-2.5 text-xs font-medium '
               + (mode === m ? 'border-accent bg-accentsoft text-accent' : 'border-line bg-surface text-ink2'),
           }, MODES[m].mark + ' ' + MODES[m].short);
         })),
@@ -1838,8 +2260,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     var s7 = useState('記録はこの端末に保存中'), storageNote = s7[0], setStorageNote = s7[1];
     var s8 = useState(''), aiNote = s8[0], setAiNote = s8[1];
 
-    var queue = useRef({ 1: null, 2: null, 3: null });
-    var lastPrompt = useRef({ 1: null, 2: null, 3: null });
+    var queue = useRef({ 1: null, 2: null, 3: null, 4: null });
+    var lastPrompt = useRef({ 1: null, 2: null, 3: null, 4: null });
     var daysRef = useRef(days);
     daysRef.current = days;
     var today = todayStr();
@@ -1857,7 +2279,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       AI.genPrompts().then(function (out) {
         if (!alive) return;
         if (out) queue.current = Object.assign({}, queue.current, out);
-        setAiNote(AI.isLive() ? 'AI採点あり' : 'AI採点なし・お題は内蔵60問');
+        setAiNote(AI.isLive() ? 'AI採点あり' : '自己採点・お題は内蔵100問');
       });
       return function () { alive = false; };
     }, []);
@@ -1910,7 +2332,26 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       begin(mode, { t: text, d: 0, dom: null, src: 'custom' }, false);
     }, []);
 
-    /* 記録は先に保存し、採点はあとから追いつかせる */
+    /* 1件の記録を差し替えて保存する。日付は記録自身のものを使う */
+    function putRecord(rec) {
+      var nd = Object.assign({}, daysRef.current);
+      var ds = rec.date;
+      var d = nd[ds] ? { date: ds, items: nd[ds].items.slice() } : { date: ds, items: [] };
+      var found = false;
+      d.items = d.items.map(function (x) { if (x.id === rec.id) { found = true; return rec; } return x; });
+      if (!found) {
+        d.items = d.items.filter(function (r) { return r.mode !== rec.mode; }).concat([rec]);
+        d.items.sort(function (a, b) { return a.mode - b.mode; });
+      }
+      d.updatedAt = new Date().toISOString();
+      nd[ds] = d;
+      daysRef.current = nd;
+      setDays(nd);
+      Store.saveDay(d);
+      persistSummary(nd);
+    }
+
+    /* 記録は先に保存する。白紙でなければ振り返りへ進む */
     var onFinish = useCallback(function (out) {
       var rec = {
         id: run.id, date: today, mode: run.mode, prompt: run.prompt,
@@ -1919,53 +2360,53 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         inputs: out.inputs, durationSec: out.durationSec, count: out.inputs.length,
         score: null, feedback: null, createdAt: new Date().toISOString(),
       };
-
-      var nextDays = Object.assign({}, daysRef.current);
-      var day = nextDays[today] ? { date: today, items: nextDays[today].items.slice() } : { date: today, items: [] };
-      day.items = day.items.filter(function (r) { return r.mode !== rec.mode; }).concat([rec]);
-      day.items.sort(function (a, b) { return a.mode - b.mode; });
-      day.updatedAt = new Date().toISOString();
-      nextDays[today] = day;
-      daysRef.current = nextDays;
-      setDays(nextDays);
+      putRecord(rec);
       setResult(rec);
       setRun(null);
+      setView(rec.inputs.length ? 'review' : 'result');
+    }, [run, today]);
+
+    /* 振り返りを記録に足し、自己採点を出し、AI 採点を走らせる */
+    var onReviewDone = useCallback(function (review) {
+      var base = result;
+      if (!base) return;
+      var rec = Object.assign({}, base);
+      if (review) {
+        var self = selfScore(rec.mode, rec.inputs, review);
+        rec.tags = review.tags || null;
+        rec.top3 = review.top3 || null;
+        rec.self = { score: self.score, parts: self.parts, checks: review.checks || {} };
+        rec.selfScore = self.score;
+      }
+      putRecord(rec);
+      setResult(rec);
       setView('result');
-
-      Store.saveDay(day);
-      persistSummary(nextDays);
-
-      if (!rec.inputs.length) return;   /* 白紙は採点しない */
 
       setScoring(true);
       AI.score(rec).then(function (r) {
         setScoring(false);
+        if (!r.ok && r.reason === 'unavailable') return;
         var fb = r.ok ? r.fb : (r.raw || null);
-        var score = r.ok ? r.fb.score : null;
-        var updated = Object.assign({}, rec, { score: score, feedback: fb });
-        setResult(updated);
-
-        var prev = daysRef.current;
-        var nd = Object.assign({}, prev);
-        var d = nd[today] ? { date: today, items: nd[today].items.slice() } : { date: today, items: [] };
-        d.items = d.items.map(function (x) { return x.id === rec.id ? updated : x; });
-        d.updatedAt = new Date().toISOString();
-        nd[today] = d;
-        daysRef.current = nd;
-        setDays(nd);
-        Store.saveDay(d);
-        persistSummary(nd);
+        var updated = Object.assign({}, rec, { score: r.ok ? r.fb.score : null, feedback: fb });
+        setResult(function (cur) { return cur && cur.id === updated.id ? updated : cur; });
+        putRecord(updated);
       }).catch(function () { setScoring(false); });
-    }, [run, today]);
+    }, [result]);
+
+    /* 履歴から同じ問題をもう一度 */
+    var retry = useCallback(function (r) {
+      begin(r.mode, { t: r.prompt, d: r.difficulty || 0, dom: r.domain || null, src: 'retry', ask: r.ask || null }, false);
+    }, []);
 
     function persistSummary(map) {
       try {
         var dates = Object.keys(map).sort();
-        var total = 0, sum = 0, n = 0, byMode = { 1: 0, 2: 0, 3: 0 };
+        var total = 0, sum = 0, n = 0, byMode = { 1: 0, 2: 0, 3: 0, 4: 0 };
         dates.forEach(function (ds) {
           map[ds].items.forEach(function (r) {
             total++; byMode[r.mode] = (byMode[r.mode] || 0) + 1;
-            if (typeof r.score === 'number') { sum += r.score; n++; }
+            var v = shownScore(r);
+            if (typeof v === 'number') { sum += v; n++; }
           });
         });
         var cur = todayStr();
@@ -1986,10 +2427,18 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       var done = {};
       (days[today] ? days[today].items : []).forEach(function (r) { done[r.mode] = true; });
       var m;
-      for (m = result.mode + 1; m <= 3; m++) if (!done[m]) return m;   /* 残りを順に */
-      for (m = 1; m < result.mode; m++) if (!done[m]) return m;        /* 飛ばした分を拾う */
-      return result.mode < 3 ? result.mode + 1 : null;                 /* 2周目 */
+      var last = MODE_IDS.length;
+      for (m = result.mode + 1; m <= last; m++) if (!done[m]) return m;   /* 残りを順に */
+      for (m = 1; m < result.mode; m++) if (!done[m]) return m;           /* 飛ばした分を拾う */
+      return result.mode < last ? result.mode + 1 : null;                 /* 2周目 */
     }, [inSet, result, days, today]);
+
+    var best10 = useMemo(function () {
+      if (!result || result.mode !== 1) return null;
+      var xs = recentRecords(days).filter(function (r) { return r.mode === 1 && r.count >= 10 && r.id !== result.id; })
+        .map(function (r) { return r.durationSec; });
+      return xs.length ? Math.min.apply(null, xs) : null;
+    }, [days, result]);
 
     var go = useCallback(function (v) { setView(v); }, []);
 
@@ -1998,13 +2447,15 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
 
     var inner;
-    if (view === 'result' && result) {
+    if (view === 'review' && result) {
+      inner = E(Review, { key: result.id, rec: result, onDone: onReviewDone });
+    } else if (view === 'result' && result) {
       inner = E(Result, {
-        rec: result, scoring: scoring, nextMode: nextMode, go: go,
+        rec: result, scoring: scoring, nextMode: nextMode, go: go, best10: best10, aiLive: AI.isLive(),
         startNext: function (m) { startSet(m); },
       });
     } else if (view === 'history') {
-      inner = E(History, { days: days, go: go });
+      inner = E(History, { days: days, go: go, retry: retry });
     } else if (view === 'custom') {
       inner = E(Custom, { go: go, startCustom: startCustom });
     } else {
