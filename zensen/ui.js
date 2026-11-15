@@ -67,7 +67,7 @@
       `<path d="${shape}" fill="url(#${id})" stroke="${stroke}" stroke-width="${king ? 4.5 : 2.5}" stroke-linejoin="round"/>` +
       // 盾は正面の印の代わりに、盾の帯を描く
       shield + (type === TATE ? marks(type, mine).replace(/<circle[^>]*cy="(13|87)"[^>]*\/>/, '') : marks(type, mine)) +
-      `<text x="50" y="${ty}" text-anchor="middle" dominant-baseline="central" font-size="${king ? 52 : 48}" fill="${ink}" style="font-family:var(--f-min);font-weight:900">${Z.NAMES[type].k}</text></svg>`;
+      `<text x="50" y="${ty}" dy=".36em" text-anchor="middle" font-size="${king ? 52 : 48}" fill="${ink}" style="font-family:var(--f-min);font-weight:900">${Z.NAMES[type].k}</text></svg>`;
   }
 
   // 動き方の図（5×5、中央が駒）

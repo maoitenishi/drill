@@ -355,7 +355,11 @@
       if (pz) return info(`<div class="tx"><b>${pz.n * 2 - 1} 手詰</b>　あなたの番。あと ${G.pzLeft} 手のうちに王を詰ませる。</div>`, 'turn-me');
       info(`<div class="tx"><b>あなたの番</b>　${G.lastFoe ? '相手は' + G.lastFoe + '。' : '手札か駒をタップ。'}</div>`, 'turn-me');
     }
-    function clearSel() { G.sel = null; view.clearMarks(); view.arrows(null); handEl.querySelectorAll('.hc.sel').forEach((n) => n.classList.remove('sel')); }
+    function clearSel() {
+      G.sel = null; view.clearMarks(); view.arrows(null);
+      handEl.querySelectorAll('.hc.sel').forEach((n) => n.classList.remove('sel'));
+      eMe.querySelectorAll('.pips i.spend').forEach((n) => n.classList.remove('spend'));
+    }
 
     // ----- 入力 -----
     const myTurn = () => !G.busy && G.s.turn === me && G.s.winner < 0;
@@ -383,6 +387,7 @@
       const ms = G.legal.filter((m) => (Z.kindOf(m) === Z.DEPLOY || Z.kindOf(m) === Z.SPELL) && Z.aOf(m) === slot);
       G.sel = { slot: slot, moves: ms };
       handEl.children[slot].classList.add('sel');
+      eMe.querySelectorAll('.pips i').forEach((p, i) => p.classList.toggle('spend', i < e && i >= e - Z.COST[card]));
       for (const m of ms) view.mark(Z.bOf(m), card === Z.RAI ? 't-cap' : 't-dep');
       sfx.play('select');
       if (!ms.length) toast(card === Z.RAI ? '狙える駒がありません' : (Z.inCheck(G.s, me) ? '王手を外せる置き場所がありません' : '置けるマスがありません'));
@@ -533,7 +538,12 @@
       if (G.dead) return;
       G.s = after;
       if (d.kind !== Z.PASS) view.setFlag('last', d.kind === Z.MOVE ? [d.from, d.to] : [d.to]);
-      if (after.winner < 0 && bump(after) >= 3) { after.winner = 2; after.reason = 'rep'; }
+      if (after.winner < 0) {
+        const times = bump(after);
+        if (times >= 3) { after.winner = 2; after.reason = 'rep'; }
+        else if (times === 2 && !pz) toast('同じ局面が 2 回目。3 回で引き分け（千日手）');
+        else if (after.ply === Z.RULES.maxPly - 10) toast('あと 10 手で判定');
+      }
       hud();
       persist();
       if (after.winner >= 0) return finish();
@@ -612,6 +622,8 @@
     function pzSolved() {
       sfx.play('win');
       view.banner('詰み', 'gold');
+      G.pzLeft = Math.max(0, G.pzLeft - 1); hud();
+      info('<div class="tx"><b>詰み</b>　相手の王に逃げ場がありません。</div>', 'tip');
       pzRecord(G.pzClean);
       const nextIdx = PUZZLES.findIndex((p, i) => i > G.pzIdx && !(store.pz[p.id] && store.pz[p.id].done));
       setTimeout(() => {
@@ -723,9 +735,10 @@
           else mv = (await brain.ask({ type: 'hint', s: Z.pack(G.s), seen: Array.from(G.seen.keys()) })).m;
           if (G.dead || !myTurn()) return;
           clearSel();
+          // 駒（札）を選んだ状態にしておく。あとは緑のマスをタップすれば指せる
           const d = Z.describe(G.s, mv);
-          if (d.kind === Z.MOVE || d.kind === Z.SHOOT) { view.mark(d.from, 'hint-a'); view.mark(d.to, 'hint-a'); view.arrows([{ from: d.from, to: d.to, cls: 'arrow-best' }]); }
-          else if (d.kind !== Z.PASS) { view.mark(d.to, 'hint-a'); const n = handEl.children[d.slot]; if (n) n.classList.add('sel'); }
+          if (d.kind === Z.MOVE || d.kind === Z.SHOOT) { selectPiece(d.from); view.mark(d.to, 'hint-a'); view.arrows([{ from: d.from, to: d.to, cls: 'arrow-best' }]); }
+          else if (d.kind !== Z.PASS) { selectCard(d.slot); view.mark(d.to, 'hint-a'); }
           info('<div class="tx"><b>ヒント</b>　' + moveText(G.s, mv, me) + '</div>', 'tip');
           persist();
         }
@@ -954,7 +967,7 @@
           <div class="st"><b>${rankName()}</b><span>段位</span></div>
           <div class="st"><b>${w}<small style="font-size:13px;color:var(--ink3)"> - ${l}</small></b><span>勝ち - 負け</span></div>
           <div class="st"><b>${streak()}</b><span>連続日数</span></div>
-          <div class="st"><b>${accAvg == null ? '—' : accAvg + '<small style="font-size:12px">%</small>'}</b><span>読みの精度（直近）</span></div>
+          <div class="st"><b>${accAvg == null ? '—' : accAvg + '<small style="font-size:12px">%</small>'}</b><span>読みの精度</span></div>
           <div class="st"><b>${pzDone()}<small style="font-size:13px;color:var(--ink3)">/${PUZZLES.length}</small></b><span>詰め正解</span></div>
           <div class="st"><b>${clean}</b><span>うち一発 ★</span></div>
         </div>

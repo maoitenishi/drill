@@ -30,7 +30,7 @@
   --f-ui: "Zen Kaku Gothic New", system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
   --f-min: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
   --appw: min(100vw, 480px);
-  --cell: min(calc((var(--appw) - 20px) / 5), calc((100dvh - 282px - env(safe-area-inset-top) - env(safe-area-inset-bottom)) / 7), 80px);
+  --cell: min(calc((var(--appw) - 20px) / 5), calc((100dvh - 292px - env(safe-area-inset-top) - env(safe-area-inset-bottom)) / 7), 80px);
 }
 *, *::before, *::after { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: var(--f-ui); overscroll-behavior: none; }
@@ -150,6 +150,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .energy .pips i.on { background: linear-gradient(180deg, #FFDC85, var(--amber)); box-shadow: 0 0 8px rgba(244,178,63,.5); }
 .energy .pips i.gain { animation: gain .5s ease; }
 .energy .pips i.need { background: repeating-linear-gradient(45deg, #5a4a1f 0 3px, #2D394A 3px 6px); }
+.energy .pips i.spend { animation: spend .7s ease-in-out infinite; }
+@keyframes spend { 50% { background: #7A5210; box-shadow: none; } }
 @keyframes gain { 0% { transform: scaleY(2.2); filter: brightness(2); } 100% { transform: none; } }
 .energy.sm .num { width: 20px; height: 20px; font-size: 11.5px; }
 .energy.sm .pips i { height: 7px; min-width: 6px; border-radius: 2px; }
@@ -355,7 +357,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .days i.td { box-shadow: 0 0 0 1.5px var(--ink2); }
 
 @media (max-height: 640px) {
-  :root { --cell: min(calc((var(--appw) - 20px) / 5), calc((100dvh - 246px) / 7), 80px); }
+  :root { --cell: min(calc((var(--appw) - 20px) / 5), calc((100dvh - 254px) / 7), 80px); }
   .hand { height: 80px; padding-top: 4px; } .hc .kj { font-size: 27px; } .hc .nmx { display: none; }
   .side.foe { height: 50px; } .info { height: 44px; } .g-top { height: 30px; }
 }

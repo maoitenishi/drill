@@ -682,11 +682,11 @@
     { depth: 2, temp: 40, miss: 0.1, slip: 0.5, slipTo: { depth: 1, temp: 45, miss: 0.3 } },
     { depth: 2, temp: 25, miss: 0, slip: 0.2, slipTo: { depth: 1, temp: 40, miss: 0.2 } },
     { depth: 3, temp: 20, miss: 0, slip: 0.3, slipTo: { depth: 1, temp: 30, miss: 0 } },
-    { depth: 3, temp: 12, miss: 0, slip: 0.2, slipTo: { depth: 1, temp: 30, miss: 0 } },
-    { depth: 4, temp: 0, ms: 1500, slip: 0.45, slipTo: { depth: 2, temp: 15, miss: 0 } },
+    { depth: 3, temp: 10, miss: 0, slip: 0.1, slipTo: { depth: 1, temp: 30, miss: 0 } },
+    { depth: 4, temp: 0, ms: 1500, slip: 0.38, slipTo: { depth: 2, temp: 15, miss: 0 } },
     { depth: 4, temp: 0, ms: 1500, slip: 0.08, slipTo: { depth: 2, temp: 15, miss: 0 } },
     { depth: 5, temp: 0, ms: 2500, slip: 0.07, slipTo: { depth: 3, temp: 10, miss: 0 } },
-    { depth: 9, temp: 0, ms: 4000 },
+    { depth: 9, temp: 0, ms: 3200 },
   ];
   // その強さで 1 手選ぶ
   function think(eng, s, cfg, rnd, seen) {

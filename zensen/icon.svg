@@ -8,6 +8,6 @@
   <g transform="translate(256 256) scale(1) translate(-256 -256)">
     <rect x="16" y="246" width="480" height="20" rx="10" fill="url(#ln)" opacity=".95"/>
     <path d="M256 78 L378 124 L404 428 L108 428 L134 124 Z" fill="url(#tile)" stroke="#E8C56D" stroke-width="12" stroke-linejoin="round"/>
-    <text x="256" y="290" text-anchor="middle" dominant-baseline="central" font-size="210" fill="#141C28" style="font-family:'Zen Old Mincho',serif;font-weight:900">前</text>
+    <text x="256" y="290" dy=".36em" text-anchor="middle" font-size="210" fill="#141C28" style="font-family:'Zen Old Mincho',serif;font-weight:900">前</text>
   </g>
 </svg>
