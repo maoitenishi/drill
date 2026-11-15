@@ -3,7 +3,7 @@
   "short_name": "仮説ドリル",
   "description": "事業責任者の視座で、仮説生成・因果分解・検証設計を90秒×3種目で鍛えるトレーニング",
   "lang": "ja",
-  "start_url": "./",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#F1F3EE",
