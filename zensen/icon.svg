@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2330"/><stop offset="1" stop-color="#0A0E14"/></linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF9EC"/><stop offset="1" stop-color="#DCCCA6"/></linearGradient>
+    <linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5BB9E2" stop-opacity="0"/><stop offset=".3" stop-color="#5BB9E2"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset=".7" stop-color="#EC5B43"/><stop offset="1" stop-color="#EC5B43" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g transform="translate(256 256) scale(1) translate(-256 -256)">
+    <rect x="16" y="246" width="480" height="20" rx="10" fill="url(#ln)" opacity=".95"/>
+    <path d="M256 78 L378 124 L404 428 L108 428 L134 124 Z" fill="url(#tile)" stroke="#E8C56D" stroke-width="12" stroke-linejoin="round"/>
+    <text x="256" y="290" text-anchor="middle" dominant-baseline="central" font-size="210" fill="#141C28" style="font-family:'Zen Old Mincho',serif;font-weight:900">前</text>
+  </g>
+</svg>

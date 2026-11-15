@@ -50,3 +50,8 @@
 ## このリポジトリについて
 
 配信用のビルド済みファイルだけを置いています。
+
+## 同じ場所にあるもの
+
+- **[ZENSEN 前線](./zensen/)** — 将棋の読みとエナジー管理を合わせた戦略ボードゲーム。
+  https://raw.githack.com/maoitenishi/drill/main/zensen/index.html
